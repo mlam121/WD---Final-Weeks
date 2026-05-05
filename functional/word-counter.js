@@ -5,12 +5,13 @@
 // 4. update the paragraph to include the reading time 
 
 
-function insertReadingTime() {
-  let $p = document.querySelector("p");
-  let words = countWords($p.innerText);
-  let duration = wordsToMinutes(words);
-  $p.innerText += " (Reading time: " + duration + " minutes)";
-}
+function insertReadingTime( $p ){
+            if ( $p.innerText && $p.matches( "p" ) ) {
+                let words = countWords( $p.innerText ); 
+                let duration = wordsToMinutes( words );
+                $p.innerText += " (Reading time: " + duration + " minutes)"; 
+            }
+        }
 
 insertReadingTime(document.querySelector("p"));
 
