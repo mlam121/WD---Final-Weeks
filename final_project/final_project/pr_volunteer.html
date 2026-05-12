@@ -45,18 +45,15 @@
                     <option>Office Help</option>
                 </select><br><br>
 
-            <label for="availability"><strong>Availability:</strong></label><br><br>
+            <label><strong>Availability:</strong></label>
 
-            <input type="radio" id="available" name="availability">
-            <label for="available">Weekdays</label><br>
+<div class="radio-group">
+    <label><input type="radio" name="availability" value="weekdays"> Weekdays</label>
+    <label><input type="radio" name="availability" value="weekends"> Weekends</label>
+    <label><input type="radio" name="availability" value="both"> Both</label>
+</div>
 
-            <input type="radio" id="unavailable" name="availability">
-            <label for="available">Weekends</label><br>
-
-            <input type="radio" id="unavailable" name="availability">
-            <label for="available">Both</label><br><br>
-
-            <label for="interests"><strong>Interests:</strong></label><br>
+            <label for="interests"><strong>Interests:</strong></label>
             <ul>
                 <li><label><input type="checkbox" name="Interest]" value="Dog Walking"> Dog Walking</label></li>
                 <li><label><input type="checkbox" name="Interests[]" value="Cat Care"> Cat Care</label></li>
@@ -64,10 +61,10 @@
                 <li><label><input type="checkbox" name="Interest[]" value="Fundraising"> Fundraising</label></li>
             </ul>
 
-            <label for="comments"><strong>Comments:</strong></label><br><br>
+            <label for="comments"><strong>Comments:</strong></label>
             <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Any additional comments you'd like to share with us"></textarea><br><br>
 
-            <input type="submit" value="Submit"><br><br>
+            <input type="submit" value="Submit"><br>
     </form>
     </div>
 

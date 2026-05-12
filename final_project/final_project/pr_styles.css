@@ -62,13 +62,16 @@ div h4 {
     color: #3B3B3B;
     font-family: arial;
 }
+
+/* main navigation */
 #main-nav ul {
   display: flex;
-  justify-content: center; /* centers horizontally */
+  justify-content: center;
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
 div#adoptable-pets li {
     display: flex;
     justify-content: center;
@@ -200,7 +203,7 @@ tbody tr:nth-last-child(1) {
 
 .member-photo {
     display: flex;
-    flex-direction: row; /* h4 on top of image */
+    flex-direction: row;
     align-items: center;
 }
 
@@ -235,4 +238,77 @@ tbody tr:nth-last-child(1) {
 .member-photo,
 .member-bio {
     margin-bottom: 30px;
+}
+
+/*event section*/
+#events-calendar h1 {
+    color:#3B3B3B;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em; 
+}
+#events-calendar {
+    margin: auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #FFF9E6;
+    border: 3px solid #C06C48;
+    border-radius: 10px;
+}
+
+#events-calendar table thead {
+    color:#3B3B3B;
+    background-color: #C06C48;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* volunteer section */
+#volunteer-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#volunteer-form label {
+    font-weight: bold;
+}
+#volunteer-form form div {
+    display: flex;
+    flex-direction: column;
+}
+
+#volunteer-form input[type="text"],
+#volunteer-form input[type="email"],
+#volunteer-form select,
+#volunteer-form textarea {
+    padding: 8px;
+    border: 1px solid #3B3B3B;
+    border-radius: 5px;
+    width: 100%;
+}
+#volunteer-form {
+    margin: 40px auto;
+    background-color: #FFF9E6;
+    padding: 20px;
+    border: 3px solid #C06C48;
+    border-radius: 10px;
+    max-width: 700px;
+}
+.radio-group {
+    display: flex;
+    gap: 8px;
+    align-items: left;
+    margin-top: 10px;
+}
+input[type="submit"] {
+    padding: 12px 25px;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    font-weight: bold;
 }
