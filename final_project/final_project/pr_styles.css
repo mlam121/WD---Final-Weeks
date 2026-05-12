@@ -171,6 +171,7 @@ tbody tr:nth-last-child(1) {
     font-weight: bold;
 }
 
+/* feature pet section */
 #featured-pet {
   overflow: auto;
 }
@@ -183,4 +184,55 @@ tbody tr:nth-last-child(1) {
 #featured-pet p {
   text-align: left;
   margin: 0;
+}
+
+/* team section */
+#team-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-photo {
+    display: flex;
+    flex-direction: row; /* h4 on top of image */
+    align-items: center;
+}
+
+
+.member-photo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.member-photo h4 {
+    color: #C06C48;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.member-bio {
+    max-width: 400px;
+    margin-left: 0px;
+    color: #3B3B3B;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.member-photo,
+#team-section p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.member-photo,
+.member-bio {
+    margin-bottom: 30px;
 }
