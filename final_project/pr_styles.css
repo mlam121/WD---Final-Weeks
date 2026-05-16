@@ -318,6 +318,15 @@ tbody tr:nth-last-child(1) {
 }
 
 /* volunteer section */
+#volunteer-form h1 {
+    text-align: center;
+    color:#C06C48;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em; 
+}
+
 #volunteer-form form {
     display: flex;
     flex-direction: column;
@@ -442,4 +451,62 @@ input[type="submit"]:hover {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+/* responsive design */
+
+/* mobile */
+@media screen and (max-width: 480px) {
+    #main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #welcome-section {
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    #welcome-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 769px) {
+
+    body {
+        font-size: 18px;
+    }
+}
+
+
+/* all links */
+a {
+    text-decoration: none;
+    color: #FFF9E6;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #3B3B3B;
+    border-radius: 5px;
+    transform: scale(1.1);
 }
